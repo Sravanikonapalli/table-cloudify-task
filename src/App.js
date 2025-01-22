@@ -64,6 +64,7 @@ function App() {
 
   return (
     <div className='container'>
+      <h1>Table</h1>
       {/* Table structure */}
       <table className='table-container'>
         <thead>

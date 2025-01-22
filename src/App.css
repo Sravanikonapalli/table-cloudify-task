@@ -1,0 +1,240 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 2px solid gray;
+}
+th{
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+}
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Label 1 Dropdown (Single Select) */
+.label-1-container {
+  position: relative;
+}
+
+.select-bar {
+  display: flex;
+  align-items: center;
+}
+
+.select-dropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.remove-btn:hover {
+  color: #ff0000;
+}
+
+/* Label 2: Multi-Select Dropdown with Tags */
+.multi-select {
+  position: relative;
+}
+
+.selected-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selected-option-box {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-option-box button {
+  margin-left: 5px;
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.selected-option-box button:hover {
+  color: #ff0000;
+}
+
+.select-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  color: gray;
+}
+
+.dropdown-icon {
+  margin-left: 8px;
+}
+
+/* Dropdown Menu (Visible when clicked) */
+.dropdown-body {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.dropdown-item input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.add-option {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-option input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.add-option button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-option button:hover {
+  background-color: #218838;
+}
+
+/* Button for adding rows */
+.btn {
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  align-self: self-end;
+  padding-right: 30px;
+}
+
+button:hover {
+  background-color: #54bed1;
+  color: black;
+}
+
+.selected-label-1{
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* app conatiner */
+.container{
+  height: 100vh;
+  background-color: rgb(227, 234, 236);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* table conatiner */
+.table-container{
+  height: auto;
+  width: 80%;
+  border: none;
+  background-color: white;
+  border-collapse: collapse; 
+  /* border-radius: 15px; */
+  /* overflow: hidden; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+
+.delete-btn{
+  cursor: pointer;
+  color: red;
+}
+.delete-icon{
+  text-align: center;
+}
